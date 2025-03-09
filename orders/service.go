@@ -6,6 +6,7 @@ type service struct {
 	store OrderStore
 }
 
+// Constructor
 func NewService(store OrderStore) *service {
 	return &service{store: store}
 }

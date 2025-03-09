@@ -6,6 +6,7 @@ type store struct {
 	// DB
 }
 
+// Constructor
 func NewStore() *store {
 	return &store{}
 }
