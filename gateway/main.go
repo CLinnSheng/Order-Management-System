@@ -22,9 +22,11 @@ func main() {
 
 	handler.registerRoutes(mux)
 
-	log.Fatalf("Starting HTTP server at %s", httpAddr)
+	log.Printf("Starting HTTP server at %s", httpAddr)
 
-	if err := http.ListenAndServe(httpAddr, mux); err != nil {
+	err := http.ListenAndServe(httpAddr, mux)
+	mux.Hand
+	if err != nil {
 		log.Fatal("Fail to start http server")
 	}
 }
